@@ -1,0 +1,140 @@
+/* CSS Reset */
+/*
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neutral-light:#eee;
+	--color-neutral-medium::#999;
+	--color-neutral-dark:#555;
+
+	--header-height:3rem;
+	--spacing:1rem;
+
+	--font-serif: Georgia, "Times New Roman", serif;
+	--font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+	font-family:var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-serif);
+}
+
+a {
+	color: inherit;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a: hover {
+	text-decoration: underline;
+
+}
+
+
+/* Layout Classes */
+
+/*.container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.display-flex { display:flex }
+.display-inline-flex { display:inline-flex }
+.display-block { display:block }
+.display-inline-block { display:inline-block }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items: center }
+.flex-justify-center { justify-content: center }
+
+/* Component Classes */
+
+/*.nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}*/
+
+/*.navbar {
+	background-color: var(--color-neutral-dark);
+	color:var(--color-white);
+	line-height:var(--header-height);
+}
+
+	.navbar h1 {
+		font-size: 1em;
+		margin: 0;
+		font-famil
+	}*/
+
+/* Custom CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    color: #333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px 0;
+}
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+

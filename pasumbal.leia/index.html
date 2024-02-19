@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 <head>
 	<meta charset="UTF-8>">
 	<title>Document</title>
+	<link rel="stylesheet" href="lib/css/styleguide.css"
 </head>
 <body>
 
-	<header>
-		<h1>Cool Website</h1>
-		<p>Such a cool website</p>
+	<header class="navbar">
+		<div class= "container display-flex"> 
+			<div class="flex-none">
+			<h1>Cool Website</h1>
+				<p>Such a cool website</p>
+			</div>
+
+			<nav class="nav">
+				<ul class="container display-flex">
+					<li><a href="#article1">Link 1</a></li>
+					<li><a href="#article2">Link 2</a></li>
+					<li><a href="#article3">Link 3</a></li>
+					<li><a href="#article4">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
-	<nav class="nav">
-		<ul>
-			<li><a href="#article1">Link 1</a></li>
-			<li><a href="#article2">Link 2</a></li>
-			<li><a href="#article3">Link 3</a></li>
-			<li><a href="#article4">Link 4</a></li>
-		</ul>
-	</nav>
 
 	<div class="container">
 		<article id="article1" class="article">
@@ -56,4 +62,56 @@
 	</div>
 
 </body>
+</head> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Boxing Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Boxing Gear Online</h1>
+        </div>
+    </header>
+
+    <nav class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h2>Welcome to Boxing Gear Online</h2>
+                <h3>Your One-Stop Online Boxing Store</h3>
+                <p>Find the best quality boxing gear, from gloves and shoes to training equipment. Designed for both beginners and professionals, our products ensure top performance and durability.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?boxing,gloves" alt="Boxing Gloves" />
+                    <figcaption>Photo by Unsplash</figcaption>
+                </figure>
+                <h3>Shop Our Collection</h3>
+                <p>Explore our extensive range of boxing equipment and apparel. From the latest gloves to protective gear, find everything you need for your boxing journey.</p>
+                <h3>About Us</h3>
+                <p>As passionate boxing enthusiasts, we aim to provide high-quality gear that meets the needs of all boxers. Learn more about our story and commitment to the boxing community.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Privacy Policy • Terms of Use</p>
+        </div>
+    </footer>
+
+</body>
+</html>
