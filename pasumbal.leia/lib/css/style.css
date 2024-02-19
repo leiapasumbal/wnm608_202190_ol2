@@ -146,30 +146,31 @@ figure, figcaption {
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -178,25 +179,29 @@ nav a {
     font-weight: bold;
 }
 
-section {
-    padding: 2rem;
+main {
+    padding: 15px;
+    background: #f4f4f4;
+    flex-grow: 1;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+    width: calc(33.333% - 30px);
     text-align: center;
 }
 
-.product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.product-list article {
-    border: 1px solid #ddd;
-    margin: 1rem;
-    padding: 1rem;
-    width: calc(33.333% - 2rem);
-}
-
-.product-list img {
+.product-item img {
     max-width: 100%;
     height: auto;
 }
@@ -205,9 +210,11 @@ button {
     background-color: #333;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    padding: 10px 15px;
+    margin-top: 10px;
     cursor: pointer;
+    width: 100%;
+    font-size: 16px;
 }
 
 button:hover {
@@ -218,17 +225,20 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
-    .product-list article {
-        width: calc(50% - 2rem);
+    .product-item {
+        width: calc(50% - 30px);
     }
 }
 
 @media (max-width: 480px) {
-    .product-list article {
+    .product-item {
         width: 100%;
     }
 }
