@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Guide</title>
+<style>
+    /* Font faces */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/path-to-fonts/OpenSans-Regular.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/path-to-fonts/OpenSans-Bold.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Crimson Text';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url('/path-to-fonts/CrimsonText-Regular.ttf') format('truetype');
+    }
+
+    /* Style guide starts here */
+    body {
+        font-family: 'Crimson Text', serif;
+        font-weight: Regular;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        border: 1px solid #ccc;
+        margin: 20px;
+        padding: 20px;
+    }
+    h1, h2, h3, .text1, .text2 {
+        margin: 0;
+        padding: 10px 0;
+    }
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: Bold;
+        font-size: 72pt;
+    }
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: Bold;
+        font-size: 64pt;
+    }
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: Bold;
+        font-size: 56pt;
+    }
+    .text1 {
+        font-family: 'Crimson Text', serif;
+        font-size: 48pt;
+    }
+    .text2 {
+        font-family: 'Crimson Text', serif;
+        font-size: 40pt;
+    }
+    .color-swatch {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid #000;
+    }
+    /* Adding the color styles */
+    .color1 { background-color: #B3B0A6; }
+    .color2 { background-color: #6B6A61; }
+    .color3 { background-color: #998974; }
+    .color4 { background-color: #919AA3; }
+    .color5 { background-color: #CAC6C3; }
+    .color6 { background-color: #AAAAAA; }
+</style>
+</head>
+<body>
+    <h1> Style Guide </h1>
+    <div class="container">
+        <h1>Header 1 - Open Sans 72pt Bold</h1>
+        <h2>Header 2 - Open Sans 64pt Bold</h2>
+        <h3>Header 3 - Open Sans 56pt Bold</h3>
+    </div>
+    <div class="container">
+        <p class="text1">Body text 1 - Crimson Text 48pt Regular</p>
+        <p class="text2">Body text 2 - Crimson Text 40pt Regular</p>
+    </div>
+    <div class="container">
+        <p> #B3B0A6 </p>
+        <div class="color-swatch color1"></div>
+        <p> #6B6A61 </p>
+        <div class="color-swatch color2"></div>
+        <p> #998974 </p>
+        <div class="color-swatch color3"></div>
+        <p> #919AA3 </p>
+        <div class="color-swatch color4"></div>
+        <p> #CAC6C3 </p>
+        <div class="color-swatch color5"></div>
+        <p> #AAAAAA </p>
+        <div class="color-swatch color6"></div>
+    </div>
+</body>
+</html>
