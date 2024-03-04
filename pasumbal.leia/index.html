@@ -191,157 +191,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tormon Boxing Store</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .product-list {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .product-list article {
-            border: 1px solid #ddd;
-            margin: 1rem;
-            padding: 1rem;
-            width: calc(33.333% - 2rem);
-        }
-
-        .product-list img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            margin-top: 0.5rem;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        @media (max-width: 768px) {
-            .product-list article {
-                width: calc(50% - 2rem);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .product-list article {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Boxing Apparel Store</title>
+    <link rel="stylesheet" href="lib/css/styleguide.css"> 
 </head>
 <body>
-    <header>
-        <h1>Tormon Boxing Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+
+<header>
+    <nav>
+        <div class="logo">
+            <!-- Insert your logo here -->
+            <img src="path-to-your-logo.png" alt="Boxing Apparel Logo">
+        </div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero section -->
     <section id="home">
-        <h2>Welcome to Tormon Boxing Store</h2>
-        <p>Your one-stop shop for the best boxing gear.</p>
+        <h1>Welcome to the Boxing Apparel Store</h1>
+        <p>Find the perfect gear for your boxing needs</p>
+        <!-- Hero image or slider goes here -->
     </section>
     
+    <!-- Products section -->
     <section id="products">
-        <h2>Featured Products</h2>
+        <h2>Our Products</h2>
         <div class="product-list">
-            <article>
-                <img src="https://source.unsplash.com/featured/?boxinggloves" alt="Boxing Gloves">
-                <h3>Boxing Gloves</h3>
-                <p>$50.00</p>
+            <!-- Product items go here -->
+            <article class="product-item">
+                <img src="path-to-product-image.jpg" alt="Product Name">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
                 <button>Add to Cart</button>
             </article>
-            <article>
-                <img src="https://source.unsplash.com/featured/?boxingshorts" alt="Boxing Shorts">
-                <h3>Boxing Shorts</h3>
-                <p>$35.00</p>
-                <button>Add to Cart</button>
-            </article>
-            <article>
-                <img src="https://source.unsplash.com/featured/?handwraps" alt="Hand Wraps">
-                <h3>Hand Wraps</h3>
-                <p>$15.00</p>
-                <button>Add to Cart</button>
-            </article>
+            <!-- Repeat for each product -->
         </div>
     </section>
     
+    <!-- About section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>Learn about our mission to provide high-quality boxing gear.</p>
+        <p>Learn more about our brand and values</p>
+        <!-- More about content goes here -->
     </section>
     
+    <!-- Contact section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Have questions? Get in touch with our team.</p>
+        <p>Get in touch with our team</p>
+        <!-- Contact form or details go here -->
     </section>
-    
-    <footer>
-        <p>&copy; 2024 Tormon Boxing Store</p>
-    </footer>
+</main>
+
+<footer>
+    <p>&copy; 2024 Boxing Apparel Store</p>
+    <!-- Footer content such as links, social media icons, etc. -->
+</footer>
+
+<script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
 
