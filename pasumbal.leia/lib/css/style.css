@@ -139,7 +139,7 @@ figure, figcaption {
 }*/
 
 /* styles.css */
-
+/*
 * {
     margin: 0;
     padding: 0;
@@ -272,4 +272,114 @@ footer {
         padding: 0.5rem;
     }
 }
+*/
+
+
+/* Font faces */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/path-to-fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/path-to-fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url('/path-to-fonts/CrimsonText-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+}
+
+.navbar h1, .container h2, .card h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 72pt;
+}
+
+.container h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 64pt;
+}
+
+.card h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 56pt;
+}
+
+.card p {
+    font-family: 'Crimson Text', serif;
+    font-size: 48pt;
+}
+
+.card {
+    /* Default card style, assuming it is similar to the one in the image */
+    border: 1px solid #B3B0A6; /* Light gray border from the primary color palette */
+    background-color: white; /* Assuming a white background */
+    color: #6B6A61; /* Dark gray text color from the primary color palette */
+}
+
+.card-soft {
+    /* Soft variation with a lighter border and shadow for depth */
+    border: 1px solid #C4C3C3; /* Lighter gray border, secondary color */
+    box-shadow: 2px 2px 4px #C4C3C3; /* Soft shadow with a secondary color */
+    background-color: white;
+    color: #6B6A61;
+}
+
+.card-hard {
+    /* Hard variation with a darker, more pronounced border */
+    border: 2px solid #6B6A61; /* Darker gray border, primary color */
+    background-color: white;
+    color: #6B6A61;
+}
+
+.card-medium {
+    /* Medium variation, a balance between soft and hard */
+    border: 1px solid #998974; /* Medium gray border, primary color */
+    background-color: white;
+    color: #6B6A61;
+}
+
+.card-flat {
+    /* Flat variation with no border or shadow */
+    border: none;
+    background-color: #CAC6C3; /* Flat background, secondary color */
+    color: #6B6A61;
+}
+
+.card-dark {
+    /* Dark variation for contrast */
+    background-color: #6B6A61; /* Dark gray background, primary color */
+    color: white; /* White text for contrast */
+}
+.color1 { background-color: #B3B0A6; }
+.color2 { background-color: #6B6A61; }
+.color3 { background-color: #998974; }
+.color4 { background-color: #919AA3; }
+.color5 { background-color: #CAC6C3; }
+.color6 { background-color: #AAAAAA; }
 
