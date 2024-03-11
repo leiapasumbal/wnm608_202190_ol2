@@ -336,45 +336,39 @@ body {
 }
 
 .card {
-    /* Default card style, assuming it is similar to the one in the image */
-    border: 1px solid #B3B0A6; /* Light gray border from the primary color palette */
-    background-color: white; /* Assuming a white background */
-    color: #6B6A61; /* Dark gray text color from the primary color palette */
+    border: 1px solid #B3B0A6;
+    background-color: white; 
+    color: #6B6A61;
 }
 
 .card-soft {
-    /* Soft variation with a lighter border and shadow for depth */
-    border: 1px solid #C4C3C3; /* Lighter gray border, secondary color */
-    box-shadow: 2px 2px 4px #C4C3C3; /* Soft shadow with a secondary color */
+    border: 1px solid #C4C3C3; 
+    box-shadow: 2px 2px 4px #C4C3C3; 
     background-color: white;
     color: #6B6A61;
 }
 
 .card-hard {
-    /* Hard variation with a darker, more pronounced border */
-    border: 2px solid #6B6A61; /* Darker gray border, primary color */
+    border: 2px solid #6B6A61; 
     background-color: white;
     color: #6B6A61;
 }
 
 .card-medium {
-    /* Medium variation, a balance between soft and hard */
-    border: 1px solid #998974; /* Medium gray border, primary color */
+    border: 1px solid #998974; 
     background-color: white;
     color: #6B6A61;
 }
 
 .card-flat {
-    /* Flat variation with no border or shadow */
     border: none;
-    background-color: #CAC6C3; /* Flat background, secondary color */
+    background-color: #CAC6C3;
     color: #6B6A61;
 }
 
 .card-dark {
-    /* Dark variation for contrast */
-    background-color: #6B6A61; /* Dark gray background, primary color */
-    color: white; /* White text for contrast */
+    background-color: #6B6A61; 
+    color: white; 
 }
 .color1 { background-color: #B3B0A6; }
 .color2 { background-color: #6B6A61; }
@@ -382,4 +376,61 @@ body {
 .color4 { background-color: #919AA3; }
 .color5 { background-color: #CAC6C3; }
 .color6 { background-color: #AAAAAA; }
+
+.form-style {
+    font-family: 'Open Sans', sans-serif;
+    color: #6B6A61; 
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-style h2 {
+    font-size: 2rem;
+    color: #6B6A61;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #B3B0A6; 
+    background-color: white;
+    font-size: 1rem;
+    color: #6B6A61;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #919AA3; 
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #B3B0A6; 
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #998974; 
+}
+
 
