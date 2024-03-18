@@ -13,62 +13,105 @@
     <header class="navbar">
         <div class="container display-flex">
             <div class="flex-none">
-                <h1>Styleguide</h1>
+                <h1>Styleguide</h1>             
             </div>
-            <div class="flex-stretch"></div>
-            <nav class="flex-none nav">
-                <ul class="container display-flex">
-                    <li><a herf="#tableofcontents">Table of Contents</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <div class="container" id="#tableofcontents">
-        <h2>Table of Contents</h2>
+    <div class="container" id="tableofcontents">
+    <h1>Table of Contents</h1>
         <div class="card soft">
             <nav class="nav">
                 <ul>
-                    <li><a href="#typography">Typhography</a></li>
-                    <ul>
-                        <li><a href="#headings">Headings</a></li>
-                        <li><a href="#paragraphs">Paragraphs</a></li>
-                    </ul>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#paragraphs">Paragraphs</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#colors">Colors</a></li>
                     <li><a href="#cards">Cards</a></li>
                     <li><a href="#viewwindow">View Window</a></li>
                     <li><a href="#navigations">Navigations</a></li>
-                    <li><a href="#gridsystem">Grid System</a></li>
-                    <li><a href="#flexsystem">Flex System</a></li>
+                    <li><a href="#forms">Form</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#hotdog">HotDog</a></li>
+                    <li><a href="#select">Select</a></li>
+                    <li><a href="#checkbox">CheckBox</a></li>
+                    <li><a href="#productgrid">Product Grid</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
+</div>
+</div>
 
-    <div class="container" id="#typography">
-        <h2>Typography</h2>
 
-        <div class="card soft">
-             <h3>Headings</h3>
-             <h1>Headings 1</h1>
-             <h2>Headings 2</h2>
-             <h3>Headings 3</h3>
-             <h4>Headings 4</h4>
-             <h5>Headings 5</h5>
-             <h5>Headings 6</h6>
 
-             <h3>Paragraphs</h3>
+    <div class="container" id="typography">
+        <h1>Typography</h1>
+        <div class="card-soft" id="headings">
+            <h3>Headings</h3>
+            <div class="grid gap">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6> <!-- Corrected closing tag -->
+            </div>
         </div>
 
-        <div class="card soft">
-            <h3>Paragraphs</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Soluta quasi quaerat accusamus optio totam adipisci, earum, inventore quos ad, autem blanditiis velit consequatur ipsa quod consectetur nostrum ex rem, quam!</p>
-             <p>Optio libero quos autem sapiente dolore, voluptatibus? Delectus voluptatem tenetur sint, ipsum soluta, nulla incidunt inventore facere. Quam illum ipsa deserunt sit, veniam, tempora aliquam minus similique minima maiores enim.</p>
-             <p>Voluptatem deleniti, quisquam rerum maiores, tempora praesentium modi doloribus ullam est quam odit, ea at corporis velit saepe fuga. Est hic explicabo architecto fugit, unde accusamus facere repudiandae nisi veritatis.</p>
+        <div class="card-soft" id="paragraphs">
+             <h3>Paragraphs</h3>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Soluta quasi quaerat accusamus optio totam adipisci, earum, inventore quos ad, autem blanditiis velit consequatur ipsa quod consectetur nostrum ex rem, quam!</p>
+            <p style="font-size: 14px;">Optio libero quos autem sapiente dolore, voluptatibus? Delectus voluptatem tenetur sint, ipsum soluta, nulla incidunt inventore facere. Quam illum ipsa deserunt sit, veniam, tempora aliquam minus similique minima maiores enim.</p>
+            <p style="font-size: 14px;">Voluptatem deleniti, quisquam rerum maiores, tempora praesentium modi doloribus ullam est quam odit, ea at corporis velit saepe fuga. Est hic explicabo architecto fugit, unde accusamus facere repudiandae nisi veritatis.</p>
+        </div>
+    </div>
+        
+
+    <div class="container" id="table">
+        <h1>Table</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Company</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>B-Real Apparel</td>
+                    <td>johndoe@breal.com</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                    <td>B-Real Apparel</td>
+                    <td>janesmith@breal.com</td>
+                </tr>
+                <tr>
+                    <td>Steve Brown</td>
+                    <td>45</td>
+                    <td>B-Real Apparel</td>
+                    <td>stevebrown@breal.com</td>
+                </tr>
+                <tr>
+                    <td>Ellen White</td>
+                    <td>50</td>
+                    <td>B-Real Apparel</td>
+                    <td>ellenwhite@breal.com</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="container">
-        <h2>Colors</h2>
+    <div class="container" id="colors">
+        <h1>Colors</h1>
             <div class="grid gap">
                 <p> #B3B0A6 </p>
                 <div class="color-swatch color1"></div>
@@ -86,9 +129,8 @@
     </div>
 
 
-    <div class="container">
-        <h2>Cards</h2>
-
+    <div class="container" id="cards">
+        <h1>Cards</h1>
         <div class="grid gap">
             <div class="col-xs-12 col-md-4">
                 <div class="card">Card</div>
@@ -111,142 +153,265 @@
         </div>
     </div>
 
-    <div class="container">
-    <form class="form-style">
-        <h2>Form Style</h2>
-
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
+    <div class="container" id="viewwindow">
+        <h1>View Window</h1>
+        <div class="view-window">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Soluta quasi quaerat accusamus optio totam adipisci, earum, inventore quos ad, autem blanditiis velit consequatur ipsa quod consectetur nostrum ex rem, quam!
+            </p>
         </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
+        
+    </div>
+
+    <div class="container" id="navigations">
+        <h1>Navigation</h1>
+        <div class="card-soft">
+                    <!-- Basic Nav -->
+            <h3> Basic </h3>
+            <nav class="nav-basic">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <!-- Flex Nav -->
+            <h3> Flex </h3>
+            <nav class="nav-flex">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <!-- Stretch Nav -->
+            <h3> Stretch </h3>
+            <nav class="nav-stretch">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <!-- Pills Nav -->
+            <h3> Pills </h3>
+            <nav class="nav-pills">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <!-- Crumbs Nav -->
+            <h3> Crumbs </h3>
+            <nav class="nav-crumbs">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+
+            <!-- Material Nav -->
+            <h3> Material </h3>
+            <nav class="nav-material">
+              <ul>
+                <li><a href="#" class="material-link">Home</a></li>
+                <li><a href="#" class="material-link">Products</a></li>
+                <li><a href="#" class="material-link">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container" id="forms">
+        <form class="form-style">
+            <h2>Form Style</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="container" id="buttons">
+        <h1>Buttons</h1>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-tertiary">Tertiary Button</button>
+        <button class="btn btn-disabled" disabled>Disabled Button</button>
+        <button class="btn btn-active">Active Button</button>
+    </div>
+
+    <div class="container" id="hotdog">
+        <h1>Hotdog</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
         </div>
 
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+        <!-- Hotdog Style Search Bar -->
+        <div class="search-bar hotdog">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
         </div>
 
-        <button type="submit" class="btn-submit">Send Message</button>
-    </form>
-</div>
+        <!-- Box Style Search Bar -->
+        <div class="search-bar box">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+
+        <!-- Pill Style Search Bar -->
+        <div class="search-bar pill">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Find</button>
+        </div>
+
+        <!-- Underline Style Search Bar -->
+        <div class="search-bar underline">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Look Up</button>
+        </div>
+
+        <!-- Material Design Style Search Bar -->
+        <div class="search-bar material">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Discover</button>
+        </div>
+
+        <!-- No Border Style Search Bar -->
+        <div class="search-bar no-border">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Query</button>
+        </div>
+
+        <!-- Elevated Style Search Bar -->
+        <div class="search-bar elevated">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Explore</button>
+        </div>
+
+    </div>
+
+    <div class="container" id="select">
+        <h1>Select</h1>
+        <div class="select-style">
+            <select>
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container" id="checkbox">
+        <!-- Basic Checkbox -->
+        <h1>Checkbox</h1>
+        <div class="checkbox-style">
+            <input type="checkbox" id="checkboxOne" name="check">
+            <label for="checkboxOne">Check this box</label>
+        </div>
+
+        <!-- Toggle Switch -->
+<!--         <div class="toggle-style">
+            <input type="checkbox" id="toggleSwitch" name="switch">
+            <label class="switch" for="toggleSwitch"></label>
+        </div> -->
+
+    </div>
+
+    <div class ="container" id="productgrid">
+        <h1>Product Grid</h1>
+        <!-- Figure Grid -->
+        <div class="product-grid figure-grid">
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <figcaption>Product 1</figcaption>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <figcaption>Product 2</figcaption>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <figcaption>Product 3</figcaption>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <div class="product-info">
+                    <h3>Product Name 1</h3>
+                    <p>$3.99</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg"" alt="Product">
+                <div class="product-info">
+                    <h3>Product Name 2 </h3>
+                    <p>$3.99</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg"" alt="Product">
+                <div class="product-info">
+                    <h3>Product Name 3</h3>
+                    <p>$3.99</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay Grid -->
+        <div class="product-grid overlay-grid">
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <div class="overlay-content">
+                    <h3>Product Name 1</h3>
+                    <p>More information here...</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <div class="overlay-content">
+                    <h3>Product Name 2</h3>
+                    <p>More information here...</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholderproduct.jpeg" alt="Product">
+                <div class="overlay-content">
+                    <h3>Product Name 3</h3>
+                    <p>More information here...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 </body>
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Style Guide</title>
-<style>
-    /* Font faces */
-    @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/path-to-fonts/OpenSans-Regular.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/path-to-fonts/OpenSans-Bold.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'Crimson Text';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url('/path-to-fonts/CrimsonText-Regular.ttf') format('truetype');
-    }
-
-    /* Style guide starts here */
-    body {
-        font-family: 'Crimson Text', serif;
-        font-weight: Regular;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        border: 1px solid #ccc;
-        margin: 20px;
-        padding: 20px;
-    }
-    h1, h2, h3, .text1, .text2 {
-        margin: 0;
-        padding: 10px 0;
-    }
-    h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: Bold;
-        font-size: 72pt;
-    }
-    h2 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: Bold;
-        font-size: 64pt;
-    }
-    h3 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: Bold;
-        font-size: 56pt;
-    }
-    .text1 {
-        font-family: 'Crimson Text', serif;
-        font-size: 48pt;
-    }
-    .text2 {
-        font-family: 'Crimson Text', serif;
-        font-size: 40pt;
-    }
-    .color-swatch {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-        display: inline-block;
-        border: 1px solid #000;
-    }
-    /* Adding the color styles */
-    .color1 { background-color: #B3B0A6; }
-    .color2 { background-color: #6B6A61; }
-    .color3 { background-color: #998974; }
-    .color4 { background-color: #919AA3; }
-    .color5 { background-color: #CAC6C3; }
-    .color6 { background-color: #AAAAAA; }
-</style>
-</head>
-<body>
-    <h1> Style Guide </h1>
-    <div class="container">
-        <h1>Header 1 - Open Sans 72pt Bold</h1>
-        <h2>Header 2 - Open Sans 64pt Bold</h2>
-        <h3>Header 3 - Open Sans 56pt Bold</h3>
-    </div>
-    <div class="container">
-        <p class="text1">Body text 1 - Crimson Text 48pt Regular</p>
-        <p class="text2">Body text 2 - Crimson Text 40pt Regular</p>
-    </div>
-    <div class="container">
-        <p> #B3B0A6 </p>
-        <div class="color-swatch color1"></div>
-        <p> #6B6A61 </p>
-        <div class="color-swatch color2"></div>
-        <p> #998974 </p>
-        <div class="color-swatch color3"></div>
-        <p> #919AA3 </p>
-        <div class="color-swatch color4"></div>
-        <p> #CAC6C3 </p>
-        <div class="color-swatch color5"></div>
-        <p> #AAAAAA </p>
-        <div class="color-swatch color6"></div>
-    </div>
-</body>
-</html>
- -->
