@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Alice Johnson",
+        "type": "Developer",
+        "email": "alice.johnson@techcorp.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Bob Smith",
+        "type": "Marketing Specialist",
+        "email": "bob.smith@marketgiant.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Carol Taylor",
+        "type": "HR Manager",
+        "email": "carol.taylor@hrworld.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "David Lee",
+        "type": "Accountant",
+        "email": "david.lee@finances.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Eva Green",
+        "type": "Teacher",
+        "email": "eva.green@school.edu",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Frank Moore",
+        "type": "Scientist",
+        "email": "frank.moore@researchlab.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Grace Hall",
+        "type": "Engineer",
+        "email": "grace.hall@engineering.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Henry White",
+        "type": "Consultant",
+        "email": "henry.white@consultancy.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Isabel Adams",
+        "type": "Photographer",
+        "email": "isabel.adams@studio.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    },
+    {
+        "name": "Jack Brown",
+        "type": "Chef",
+        "email": "jack.brown@foodplace.com",
+        "classes": [
+            101,
+            102,
+            103,
+            104
+        ]
+    }
+]
