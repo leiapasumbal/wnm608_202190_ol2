@@ -29,6 +29,6 @@
                 </ul>
             </div>
         </div>
-        <p class="mt-4 text-center">&copy; <?php echo date("Y"); ?> EcomSite. All rights reserved.</p>
+        <p class="mt-4 text-center">&copy; <?php echo date("Y"); ?> Created by Leia.</p>
     </div>
 </footer>
