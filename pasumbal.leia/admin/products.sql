@@ -43,13 +43,20 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
-(1, 'Leather Boxing Gloves', 120.00, 'Gloves', '2024-04-14 15:33:51', '2024-04-14', 'High-quality leather boxing gloves designed for professional training and competition.', 'leather_gloves_front.png', 'leather_gloves_full.png,leather_gloves_side.png'),
-(2, 'Punching Bag', 150.00, 'Bags', '2024-04-14 15:34:02', '2024-04-14', 'Heavy-duty punching bag for strength training and boxing practice.', 'punching_bag_front.png', 'punching_bag_full.png,punching_bag_side.png'),
-(3, 'Speed Ball', 85.00, 'Bags', '2024-04-14 15:29:57', '2024-04-14', 'Durable speed ball for reflex and speed training.', 'speed_ball_front.png', 'speed_ball_full.png,speed_ball_side.png'),
-(4, 'Headgear', 90.00, 'Protective Gear', '2024-04-14 15:38:03', '2024-04-14', 'Cushioned headgear to ensure safety and reduce impact during sparring sessions.', 'headgear_front.png', 'headgear_full.png,headgear_side.png'),
-(5, 'Boxing Shoes', 110.00, 'Apparel', '2024-04-14 15:42:00', '2024-04-14', 'Lightweight and comfortable boxing shoes offering excellent grip and mobility.', 'boxing_shoes_front.png', 'boxing_shoes_full.png,boxing_shoes_side.png'),
-(6, 'Hand Wraps', 25.00, 'Protective Gear', '2024-04-14 15:45:47', '2024-04-14', 'Essential hand wraps for wrist support and protection under gloves.', 'hand_wraps_front.png', 'hand_wraps_full.png,hand_wraps_only.png');
+-- Insert new records
+INSERT INTO `products` (`name`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
+('Everlast Standard', 99.99, 'Gloves', NOW(), NOW(), 'High-quality standard boxing gloves.', 'everlast1.jpeg', ''),
+('Everlast Beginner', 79.99, 'Gloves', NOW(), NOW(), 'Beginner boxing gloves for entry-level training.', 'everlast3.jpeg', ''),
+('Auth Hoodie', 49.99, 'Apparel', NOW(), NOW(), 'Authentic hoodie for casual wear.', 'hoodie1.jpeg', ''),
+('Green Hill Shorts', 34.99, 'Apparel', NOW(), NOW(), 'Comfortable shorts for training sessions.', 'shorts1.jpeg', ''),
+('Green Hill Gold Shorts', 39.99, 'Apparel', NOW(), NOW(), 'Premium gold shorts for boxing.', 'shorts2.jpeg', ''),
+('Green Hill Blue Shorts', 39.99, 'Apparel', NOW(), NOW(), 'Blue shorts for boxing.', 'shorts3.jpeg', ''),
+('Boxing Sweater', 59.99, 'Apparel', NOW(), NOW(), 'Warm sweater for cold weather training.', 'sweater1.jpeg', ''),
+('Crew Sweater', 54.99, 'Apparel', NOW(), NOW(), 'Casual sweater for training or leisure.', 'sweater3.jpeg', ''),
+('Fang MouthGuard', 14.99, 'Protective Gear', NOW(), NOW(), 'Mouthguard for boxing protection.', 'teethmg1.jpeg', ''),
+('Title Mouth Guard', 19.99, 'Protective Gear', NOW(), NOW(), 'Mouthguard for title protection.', 'titlehmg.jpeg', ''),
+('Title Pro Mouth Guard', 24.99, 'Protective Gear', NOW(), NOW(), 'Professional mouthguard for boxing.', 'titlehmg2.jpeg', ''),
+('Venum Gloves', 129.99, 'Gloves', NOW(), NOW(), 'High-quality Venum gloves for professional boxing.', 'venum.jpeg', '');
 
 --
 -- Indexes for dumped tables

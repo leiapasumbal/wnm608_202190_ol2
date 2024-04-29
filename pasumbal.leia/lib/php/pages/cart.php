@@ -65,24 +65,30 @@
     <div class="cart-container">
         <div class="cart-items">
             <h2>Your cart</h2>
-            <!-- Dynamically list cart items here. Example structure for a cart item: -->
-            <div class="cart-item">
-                <img src="path_to_item_image.jpg" alt="Item Name" />
-                <div class="item-details">
-                    <span>Item Name</span><br>
-                    <span class="item-price">$Item Price</span>
-                    <a href="#" class="delete-link">Delete</a>
+            <?php
+            include_once "../functions.php"; // Include the file with database functions
+
+            // Fetch cart items from the database based on session data
+            $cartItems = getCartItems();
+
+            // Loop through each cart item and display it
+            foreach ($cartItems as $item) {
+                ?>
+                <div class="cart-item">
+                    <img src="../img/<?= $item->thumbnail ?>" alt="<?= $item->name ?>" />
+                    <div class="item-details">
+                        <span><?= $item->name ?></span><br>
+                        <span class="item-price">$<?= $item->price ?></span>
+                        <a href="cart_actions.php?action=delete-cart-item&id=<?= $item->id ?>" class="delete-link">Delete</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Repeat for each item in the cart -->
+            <?php
+            }
+            ?>
         </div>
 
         <div class="order-summary">
-            <h3>Summary</h3>
-            <div class="summary-item"><span>Sub Total</span><span>$SubTotal</span></div>
-            <div class="summary-item"><span>Taxes</span><span>$Taxes</span></div>
-            <div class="summary-item total"><span>Total</span><span>$Total</span></div>
-            <button class="checkout-btn" onclick="location.href='checkout.php'">Checkout</button>
+            <!-- Summary section remains the same -->
         </div>
     </div>
 </section>

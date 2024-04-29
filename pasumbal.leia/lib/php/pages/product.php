@@ -57,7 +57,7 @@
 <section>
     <div class="product-detail-container">
         <?php
-        $mysqli = new mysqli("localhost", "username", "password", "database_name");
+        $mysqli = new mysqli("localhost", "id22071658_leiapasumbal", "TaylorSwift13!", "leiadb");
         $product_id = $_GET['id'];
 
         if ($mysqli->connect_error) {

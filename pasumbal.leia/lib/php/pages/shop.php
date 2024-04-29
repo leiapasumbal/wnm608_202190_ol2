@@ -1,32 +1,26 @@
-<?php include '../parts/header.php'; ?>
+<?php include_once __DIR__ . '/../functions.php'; // Include the file with database functions ?>
+<?php include_once __DIR__ . '/../parts/header.php'; ?>
+
 
 <section>
     <div class="container">
-        <h2>Products</h2>
+        <h2>Shop</h2>
         <p>Welcome to our shop! Browse our products below:</p>
-
-        <div class="product-grid">
+        <div class="products">
             <?php
-            $mysqli = new mysqli("localhost", "username", "password", "boxing_gear");
-            if ($mysqli->connect_error) {
-                die("Connection failed: " . $mysqli->connect_error);
-            }
+            // Fetch products from the database
+            $products = makeQuery(makeConn(), "SELECT * FROM `products`");
 
-            $result = $mysqli->query("SELECT * FROM products");
-            
-            while ($row = $result->fetch_assoc()) {
-                echo "<div class='product-item'>";
-                echo "<a href='product_detail.php?id=" . $row['id'] . "'>";
-                echo "<img src='" . $row['thumbnail'] . "' alt='" . $row['name'] . "' class='product-image'>";
-                echo "<h3>" . $row['name'] . "</h3>";
-                echo "</a>";
+            // Loop through each product and display it
+            foreach ($products as $product) {
+                echo "<div class='product'>";
+                echo "<img src='../img/{$product->thumbnail}' alt='{$product->name}' />";
+                echo "<h3>{$product->name}</h3>";
                 echo "</div>";
             }
-
-            $mysqli->close();
             ?>
         </div>
     </div>
 </section>
 
-<?php include '../parts/footer.php'; ?>
+<?php include_once __DIR__ . '/../parts/footer.php'; ?>

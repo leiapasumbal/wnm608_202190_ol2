@@ -3,8 +3,8 @@
 <!-- Content for the index page goes here -->
 <section>
     <div class="container">
-        <h2>Welcome to EcomSite</h2>
-        <p>This is the homepage of our e-commerce site.</p>
+        <h2>Welcome to Leia Creates</h2>
+        <p>Where Creativity Meets Action.</p>
         
         <!-- Bootstrap Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -15,10 +15,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/1.png" class="d-block w-100" alt="Image 1">
+                    <img src="../../../img/1.png" class="d-block w-100" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/2.png" class="d-block w-100" alt="Image 2">
+                    <img src="../../../img/2.png" class="d-block w-100" alt="Image 2">
                 </div>
                 <!-- Add more carousel items as needed -->
             </div>
