@@ -1,7 +1,4 @@
 <?php include_once "../functions.php";
-include_once __DIR__ . '/../auth.php';
-
-
 
 
 switch($_GET['action']){

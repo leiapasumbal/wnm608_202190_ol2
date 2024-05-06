@@ -3,7 +3,7 @@
 <nav>
     <div class="container">
         <a href="index.php">Back to User List</a>
-        <a href="adduser.php">Add User</a>
+        <a href="add.php">Add User</a>
     </div>
 </nav>
 

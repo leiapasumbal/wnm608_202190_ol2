@@ -1,6 +1,4 @@
-<?php
-
-include_once "../notes/functions.php";
+<?php include_once "../notes/functions.php";
 resetCart();
 ?>
 
